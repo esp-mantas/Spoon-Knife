@@ -39,6 +39,7 @@
 	function keydownHandler(e){
 		keyCodes.shift();
 		keyCodes.push(e.keyCode);
+		alert(e.keyCode);
 		if(keyCodes.every(function(element, index, array){return element===pattern[index];})){
 			document.getElementById("rainbow-message").style.display="";
 		}
